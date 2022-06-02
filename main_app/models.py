@@ -1,20 +1,6 @@
 from django.db import models
 from django.utils.translation import gettext_lazy as _
 
-
-# Create your models here.
-
-
-# LOW = 1
-# MID = 2
-# HIGH = 3
-# CHOICES = (
-#     (LOW, 'Low')
-#     (MID, 'Medium')
-#     (HIGH, 'High')
-# )
-
-
 class Champion(models.Model):
     name = models.CharField(max_length=100)
     nickname = models.CharField(max_length=100)
