@@ -1,0 +1,19 @@
+{% extends 'base.html' %} 
+{% block body %}
+<div class="detail__img">
+    <img src="{{champion.img}}" alt="{{champion.name}}" />
+</div>
+    <h1 class="title">{{champion.name}}</h1>
+    <h2 class="title">{{champion.nickname}}</h2>
+</div>
+<div class="detail__about">
+    <h2 class="title is-4">Specs</h2>
+    <p>Damage: {{champion.damage}}</p>
+    <p>Utility: {{champion.utility}}</p>
+    <p>Toughness: {{champion.toughness}}</p>
+    <p>Difficulty: {{champion.difficulty}}</p>
+    <p>Champion Type: {{champion.champ_type}}</p>
+</div>
+</div>
+
+{% endblock %}

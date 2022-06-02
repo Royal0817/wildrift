@@ -5,19 +5,10 @@
     <h1 class="title pt-5">List of Champs</h1>
         <div class="gallery">
             {% for champion in champions %}
-            <a href="">
+            <a href="{% url 'champ_detail' champion.pk %}">
                 <div class="card">
                     <div class="card-header">
                         <p class="card-header-title">{{champion.name}}</p>
-                    </div>
-                    <div class="card-header2">
-                        <p class="card-header-title">{{champion.nickname}}</p>
-                    </div>
-                    <div class="card-header3">
-                        <p class="card-header-title">{{champion.damage}}</p>
-                    </div>
-                    <div class="card-header4">
-                        <p class="card-header-title">{{champion.champ_type}}</p>
                     </div>
                     <div class="card-image">
                         <figure class="image is-square">
